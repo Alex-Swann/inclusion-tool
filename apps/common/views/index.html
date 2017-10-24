@@ -1,0 +1,69 @@
+{{< govuk-template}}
+
+{{$head}}
+{{> partials-head}}
+{{/head}}
+
+{{$pageTitle}}{{#t}}pages.default-title{{/t}}{{#t}}pages.landing-page-title{{/t}}{{/pageTitle}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+{{$insideHeader}}{{/insideHeader}}
+
+{{$journeyHeader}}
+Register to Apply for Registered Traveller
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$main}}
+<main id="content" class="main" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="mailto:geinbox@homeoffice.gsi.gov.uk?subject=Registered Traveller feedback">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <!--Landing page content-->
+
+  <div class="grid-row">
+    {{> partials-maincontent-left}}
+  </div>
+
+</main>
+{{/main}}
+
+{{$content}}
+
+{{<partials-form}}
+{{$form}}
+
+{{#input-submit}}Register submit{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+
+{{$footerSupportLinks}}
+<h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li>Contact <a href="mailto:geinbox@homeoffice.gsi.gov.uk">geinbox@homeoffice.gsi.gov.uk</a> for help using this service</li>
+</ul>
+<br>
+<ul>
+  <li><a href="mailto:geinbox@homeoffice.gsi.gov.uk?subject=Feedback">Feedback</a></li>
+  <li><a href="/terms-and-conditions" target="_blank">Terms and conditions<span class="visuallyhidden">Opens in new window</span></a></li>
+  <li><a href="/privacy-policy" target="_blank">Privacy Policy<span class="visuallyhidden">Opens in new window</span></a></li>
+  <li><a href="/cookies" target="_blank">Cookies<span class="visuallyhidden">Opens in new window</span></a></li>
+</ul>
+{{/footerSupportLinks}}
+
+{{$bodyEnd}}
+{{> partials-gatag}}
+{{/bodyEnd}}
+
+{{/ govuk-template}}

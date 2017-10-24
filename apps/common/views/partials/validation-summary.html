@@ -1,0 +1,22 @@
+{{#errorlist.length}}
+<div class="validation-summary error-summary" tabindex="-1">
+  {{$errorlist-title}}
+    {{#errorLength.single}}
+      <h2 class="heading-medium error-summary-heading">{{#t}}errorlist.title.single{{/t}}</h2>
+    {{/errorLength.single}}
+    {{#errorLength.multiple}}
+      <h2 class="heading-medium error-summary-heading">{{#t}}errorlist.title.multiple{{/t}}</h2>
+    {{/errorLength.multiple}}
+  {{/errorlist-title}}
+
+  {{<partials-validation-list}}
+    {{$validation-list}}
+      {{#errorlist}}
+        {{#message}}
+          <li><a href="#{{key}}-group">{{#t}}{{{ message }}}{{/t}}</a></li>
+        {{/message}}
+      {{/errorlist}}
+    {{/validation-list}}
+  {{/partials-validation-list}}
+</div>
+{{/errorlist.length}}

@@ -1,0 +1,33 @@
+{{<layout-exit}}
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+<h1 class="heading-medium">{{#t}}exit-pages.nationality.title{{/t}}</h1>
+{{#passportNationality}}
+<p>{{passportNationality}}{{#t}}exit-pages.nationality.notice{{/t}}</p>
+{{/passportNationality}}
+{{^passportNationality}}
+<p>{{#t}}exit-pages.nationality.alternate-notice{{/t}}</p>
+{{#t}}exit-pages.nationality.alternate-notice-eligible-passports{{/t}}
+{{#t}}exit-pages.nationality.alternate-notice-asia{{/t}}
+{{#t}}exit-pages.nationality.alternate-notice-middle-east{{/t}}
+{{#t}}exit-pages.nationality.alternate-notice-north-america{{/t}}
+{{#t}}exit-pages.nationality.alternate-notice-south-america{{/t}}
+{{#t}}exit-pages.nationality.alternate-notice-australasia{{/t}}
+{{/passportNationality}}
+<p>{{#t}}exit-pages.closing-text{{/t}}</p>
+<a href="/backToGovUk" class="button" role="button">Exit to GOV.UK </a>
+{{#showStack}}
+<pre>
+  {{error.stack}}
+</pre>
+{{/showStack}}
+
+{{/content}}
+{{/layout-exit}}

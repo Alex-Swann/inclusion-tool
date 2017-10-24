@@ -1,0 +1,164 @@
+$path: "../img/";
+
+@import "../../node_modules/hmpo-frontend-toolkit/assets/stylesheets/app.scss";
+
+@import "./mixins.scss";
+@import "./alert.scss";
+@import "./icons.scss";
+@import "./custom.scss";
+@import "./complete.scss";
+@import "./payment.scss";
+@import "./phases.scss";
+
+.phase-banner {
+  @include phase-banner();
+}
+
+#step {
+  @include core-16;
+  a {
+    display: inline-block;
+    margin-top: $gutter-half;
+    padding-left: 14px;
+    border-bottom: $black 1px solid;
+    color: $black;
+    text-decoration: none;
+    background: url("../images/icons/icon-caret-left.png") no-repeat 0 4px;
+    @include media(mobile) {
+      background-position: 0 1px;
+    }
+    margin-right: 14px;
+  }
+
+  span {
+    display: inline-block;
+    margin-top: $gutter-half;
+    color: $secondary-text-colour;
+  }
+}
+
+h1 {
+  @include bold-24;
+}
+
+.form-label-bold {
+  @include core-19;
+}
+
+.form-legend-bold {
+  @include bold-24;
+}
+
+//autocomplete styling
+.tt-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 65%;
+}
+
+.tt-suggestion {
+  padding: 0.5em;
+
+  &:hover,
+  &.tt-cursor {
+    color: #fff;
+    background-color: #0097cf;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+//custom form styling
+
+.form-control {
+  padding: 0.5em;
+
+  @include media(desktop) {
+    width: 65%;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.25em;
+  input {
+    border: 2px solid #6f777b;
+  }
+}
+
+[data-add-alias] {
+  margin-bottom: 2em;
+  display: block;
+}
+
+// GOVUK Elements `.form-date` overrides
+
+.form-date {
+    border-left: none;
+    padding-left: 0;
+    overflow: hidden;
+
+    label {
+        @include core-19();
+    }
+
+    .form-group {
+        input {
+            &[id$="-year"] {
+                width: 70px;
+            }
+        }
+    }
+}
+
+#delivery-details {
+  width: 100%;
+}
+
+#about {
+  dl {
+    display: inline-block;
+    dt {
+      &.block-label {
+        padding-left: 1em;
+      }
+    }
+    dd {
+      padding-left: 1em;
+    }
+  }
+}
+
+.table-details {
+  width: 100%;
+  white-space: nowrap;
+
+  tbody {
+    td:nth-child(1) {
+      width: 20%;
+    }
+    td:nth-child(2) {
+      width: 60%;
+    }
+    td:nth-child(3) {
+      text-align: right;
+      padding-right: 0;
+    }
+  }
+
+  .button {
+    margin: 0;
+    background: #dde0e1;
+    color: #000;
+  }
+}
+
+.version {
+  position: absolute;
+  right: 0px;
+  background-color: transparent;
+  font-size: 8px;
+  padding: 5px;
+  color: #454a4c;
+}

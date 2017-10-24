@@ -1,0 +1,48 @@
+{{<layout}}
+{{$title}}{{#t}}pages.default-title{{/t}}{{#t}}pages.dateOfBirth.title{{/t}}{{/title}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+{{#SUCCESS}}
+  <div class="panel panel-border-wide alert-success" id="panel-success">
+    <p>Participant added to Right to work</p>
+  </div>
+{{/SUCCESS}}
+
+<h1 class="heading-xlarge">
+  {{#t}}pages.startChoice.title1{{/t}}<br>
+  <span class="blue-heading">{{#t}}pages.startChoice.title2{{/t}}</span>
+</h1>
+
+<p>{{#t}}pages.startChoice.info1{{/t}}</p>
+
+<h2 class="heading-medium">
+  {{#t}}pages.startChoice.legend{{/t}}
+</h2>
+
+{{#radio-group}}startChoice{{/radio-group}}
+
+{{#input-submit}}continue updateContinue{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

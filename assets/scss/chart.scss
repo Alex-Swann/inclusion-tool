@@ -1,0 +1,33 @@
+.bar {
+  fill: #5190BF;
+}
+
+.axis text {
+  font: 12px sans-serif;
+  fill: #757575;
+  stroke: #757575;
+  stroke-width: 0.3;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #757575;
+  shape-rendering: crispEdges;
+}
+
+.graph-text {
+  fill: #5190BF;
+  stroke: #5190BF;
+}
+
+.graph-title {
+  fill: #757575;
+  stroke: #757575;
+  stroke-width: 0.5;
+}
+
+.graph-title-below {
+  @extend .graph-title;
+  font: 15px sans-serif;
+}

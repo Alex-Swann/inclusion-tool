@@ -1,0 +1,21 @@
+.header-notice-container {
+  background-color: #28a197;
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+  @include bold-36;
+}
+
+.header-notice-container {
+  h1 {
+    margin-top: 0;
+  }
+  p {
+    font-size: 0.5em;
+    @include bold-19;
+    &#application-reference {
+      @include bold-36;
+      margin-bottom: 0;
+    }
+  }
+}

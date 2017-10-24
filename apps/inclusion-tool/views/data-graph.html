@@ -1,0 +1,37 @@
+{{<layout}}
+{{$title}}{{#t}}pages.default-title{{/t}}{{#t}}pages.dateOfBirth.title{{/t}}{{/title}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+<h1 class="heading-large">
+  {{#t}}pages.graphPage.title1{{/t}}
+  <span class="blue-heading">{{#t}}pages.graphPage.title2{{/t}}</span>
+</h1>
+
+<p>{{#t}}pages.graphPage.info1{{/t}}</p>
+
+<svg class="chart"></svg>
+
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

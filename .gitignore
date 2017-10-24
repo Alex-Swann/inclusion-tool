@@ -1,0 +1,39 @@
+# JavaScript
+node_modules/
+.sass-cache
+
+# Ruby
+Gemfile.lock
+
+# IDE
+.idea/
+*.iml
+
+# Deploy
+version.conf
+k8resources/rt-customer_version
+
+# Generated
+coverage
+xunit.xml
+public/
+npm-debug.log
+cukes/cucumber.json
+cukes/testreport/
+cukes/screenshot/
+cukes/saved_pages/
+apps/**/translations/en/default.json
+selenium-debug.log
+reports
+acceptance_tests/reports
+acceptance_tests/screenshots
+
+# govuk toolkit and elements
+assets/scss/colours
+assets/scss/design-patterns/
+assets/scss/elements/
+assets/scss/_*
+!assets/scss/_base.scss
+
+# OS
+.DS_Store

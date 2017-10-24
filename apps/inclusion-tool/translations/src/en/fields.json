@@ -1,0 +1,28 @@
+{
+  "dateOfSession-day": {
+    "label": "Day"
+  },
+  "dateOfSession-month": {
+    "label": "Month"
+  },
+  "dateOfSession-year": {
+    "label": "Year"
+  },
+  "dateOfSession": {
+    "legend": "Date of research session",
+    "hint": "This is not a required field and can be a partial or full date."
+  },
+  "participantID": {
+    "label": "Participant ID",
+    "hint": "Any identifier that is useful to you. Only people with permission to view this project will see this."
+  },
+  "rating": {
+    "label": "Digital inclusion category"
+  },
+  "accessNeeds": {
+    "legend": "Does your participant have any access needs?"
+  },
+  "hearing": {
+    "label": "Hearing"
+  }
+}

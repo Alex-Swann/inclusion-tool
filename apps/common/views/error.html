@@ -1,0 +1,19 @@
+{{<layout}}
+{{$title}}{{#t}}errors.default.title{{/t}}{{/title}}
+
+{{$content}}
+
+<h1 class="heading-medium">{{content.title}}</h1>
+<p>{{content.message}}</p>
+<a href="/{{startLink}}" class="button" role="button">Start again</a>
+{{#showStack}}
+<pre>
+  {{error.stack}}
+</pre>
+{{/showStack}}
+
+{{/content}}
+
+{{/layout}}
+
+

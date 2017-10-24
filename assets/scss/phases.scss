@@ -1,0 +1,107 @@
+.phases-list {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5em;
+  > li:before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    border: none;
+    margin: -2.8em -3.57em;
+  }
+  > li {
+    border-left: solid 0.6em;
+    padding: 0 0 0.5em 2em;
+    margin-top: 2.76em;
+  }
+  > li:first-child {
+    padding-top: 0.5em;
+    margin-top: 4em;
+  }
+  > li.discovery:before {
+    background: url('../images/icons/circle-number-1x2.png');
+    background-repeat: no-repeat;
+    background-size: 48px;
+  }
+  > li.discovery {
+    border-color: #912b88;
+  }
+  > li.alpha:before {
+    background: url('../images/icons/circle-number-2x2.png');
+    background-repeat: no-repeat;
+    background-size: 48px;
+  }
+  > li.alpha {
+    border-color: #d53880;
+  }
+  > li.beta:before {
+    background: url('../images/icons/circle-number-3x2.png');
+    background-repeat: no-repeat;
+    background-size: 48px;
+  }
+  > li.beta {
+    border-color: #f47738;
+  }
+  > li.retirement:before {
+    background: url('../images/icons/circle-number-4x2.png');
+    background-repeat: no-repeat;
+    background-size: 48px;
+  }
+  > li.retirement {
+    border-color: transparent;
+  }
+  h3 {
+    margin-top: 1em;
+  }
+  p {
+    font-size: 16px;
+  }
+	.list-bullet {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 640px) {
+  .phases-list {
+    p, li {
+      font-size: 14px;
+      line-height: 1.14286;
+    }
+    > li:before {
+      content: "";
+      display: block;
+      width: 38px;
+      height: 38px;
+      margin: -2.8em -3.45em;
+    }
+    > li {
+      font-size: 16px;
+      margin-top: 3.5em;
+    }
+    > li:first-child:before {
+      margin: -2.8em -3.45em;
+    }
+    > li.discovery:before{
+      background: url("../images/icons/circle-number-1x2.png");
+      background-repeat: no-repeat;
+      background-size: 38px;
+    }
+    > li.alpha:before{
+      background: url("../images/icons/circle-number-2x2.png");
+      background-repeat: no-repeat;
+      background-size: 38px;
+    }
+    > li.beta:before{
+      background: url("../images/icons/circle-number-3x2.png");
+      background-repeat: no-repeat;
+      background-size: 38px;
+    }
+    > li.retirement:before{
+      background: url("../images/icons/circle-number-4x2.png");
+      background-repeat: no-repeat;
+      background-size: 38px;
+    }
+  }
+}

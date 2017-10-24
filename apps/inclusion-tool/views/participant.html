@@ -1,0 +1,54 @@
+{{<layout}}
+{{$title}}{{#t}}pages.default-title{{/t}}{{#t}}pages.dateOfBirth.title{{/t}}{{/title}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+<h1 class="heading-large">
+  {{#t}}pages.participant.title1{{/t}}<br>
+  <span class="blue-heading">{{#t}}pages.participant.title2{{/t}}</span>
+</h1><br>
+
+<fieldset id="dateOfSession-group" class="{{#errors.dateOfSession}} error{{/errors.dateOfSession}} form-group">
+  <h1 class="form-label-bold">{{#t}}pages.dateOfSession.legend{{/t}}</h1>
+  <div class="form-date">
+    {{#errors.dateOfSession}}
+    <span id="dateOfSession-error" class="error-message">
+        {{errors.dateOfSession.message}}
+      </span>
+    {{/errors.dateOfSession}}
+    <p id="dateOfSession-hint" class="form-hint">{{#t}}fields.dateOfSession.hint{{/t}}</p>
+    {{#input-date}}dateOfSession{{/input-date}}
+  </div>
+</fieldset>
+
+{{#input-text}}participantID{{/input-text}}
+
+{{#select}}rating{{/select}}
+
+<h1 class="form-label-bold">{{#t}}fields.accessNeeds.legend{{/t}}</h1>
+{{#radio-group}}accessNeeds{{/radio-group}}
+
+{{#input-submit}}submit updateContinue{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

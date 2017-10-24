@@ -1,0 +1,226 @@
+{{<layout}}
+{{$title}}{{#t}}pages.default-title{{/t}}{{#t}}pages.dateOfBirth.title{{/t}}{{/title}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+<h1 class="heading-large">
+  {{#t}}pages.accessNeedType.title{{/t}}<br>
+</h1>
+
+<fieldset>
+<!-- hearing !-->
+  <div class="multiple-choice">
+    <input id="Hearing" type="checkbox" value="Yes" aria-controls="hearing-options" aria-expanded="true">
+    <label for="Hearing">Hearing</label>
+  </div>
+  <div class="panel panel-border-narrow js-hidden" id="hearing-options" aria-hidden="false">
+    <p>
+        Select all options that are relevant to you.
+    </p>
+
+<div class="form-group">
+  <fieldset>
+
+    <legend class="visually-hidden">Hearing disabilities</legend>
+
+    <div class="multiple-choice">
+      <input id="deaf-uses-sign" type="checkbox" name="Deaf-uses-sign" value="Yes">
+      <label for="deaf-uses-sign">Deaf (uses British Sign Language as first or preferred language)</label>
+    </div>
+    <div class="multiple-choice">
+      <input id="hearing-impairment" type="checkbox" name="Hearing-impairment" value="Yes">
+      <label for="hearing-impairment">Hearing impairment/hearing loss</label>
+    </div>
+    <div class="multiple-choice" data-target="hearing-other">
+      <input id="nationalities-other" type="checkbox" aria-controls="hearing-other" aria-expanded="true">
+      <label for="nationalities-other">Other (please specify)</label>
+    </div>
+    <div class="panel panel-border-narrow js-hidden" id="hearing-other" aria-hidden="true">
+      <label class="form-label" for="hearing-other">Hearing needs</label>
+      <input class="form-control" type="text" id="hearing-other" name="Other-hearing">
+    </div>
+
+  </fieldset>
+  </div>
+</div>
+
+<!-- physical-->
+<div class="multiple-choice" data-target="physical-option">
+<input id="Physical" type="checkbox" value="No" aria-controls="physical-option" aria-expanded="false">
+<label for="Physical">Physical and Mobility</label>
+</div>
+
+<div class="panel panel-border-narrow js-hidden" id="physical-option" aria-hidden="true">
+<p>
+  Select all options that are relevant to you.
+</p>
+
+<div class="form-group">
+<fieldset>
+
+  <legend class="visually-hidden">Physical and Mobility</legend>
+
+  <div class="multiple-choice">
+    <input id="physical-disability" name="Physical-disability" type="checkbox" value="Yes">
+    <label for="physical-disability">Physical disability</label>
+  </div>
+  <div class="multiple-choice">
+    <input id="wheelchair" name="Wheelchair" type="checkbox" value="Yes">
+    <label for="wheelchair">Wheelchair/mobility difficulties</label>
+  </div>
+  <div class="multiple-choice" data-target="physical-other">
+    <input id="nationalities-other" type="checkbox" value="Citizen of a different country" aria-controls="physical-other" aria-expanded="true">
+    <label for="nationalities-other">Other (please specify)</label>
+  </div>
+<div class="panel panel-border-narrow js-hidden" id="physical-other" aria-hidden="true">
+  <label class="form-label" for="physical-other">Physical needs</label>
+  <input class="form-control" type="text" id="physical-other" name="Other-physical">
+</div>
+
+</fieldset>
+</div>
+</div>
+
+<!-- thinking-->
+
+<div class="multiple-choice" data-target="thinking-option">
+<input id="Thinking" type="checkbox" value="No" aria-controls="thinking-option" aria-expanded="false">
+<label for="Thinking">Thinking and Feeling</label>
+</div>
+
+<div class="panel panel-border-narrow js-hidden" id="thinking-option" aria-hidden="true">
+<p>
+  Select all options that are relevant to you.
+</p>
+
+<div class="form-group">
+<fieldset>
+
+  <legend class="visually-hidden">Thinking and Feeling</legend>
+
+  <div class="multiple-choice">
+    <input id="adhd" name="ADHD" type="checkbox" value="Yes">
+    <label for="adhd">ADHD</label>
+  </div>
+  <div class="multiple-choice">
+    <input id="autistic" name="Autistic" type="checkbox" value="Yes">
+    <label for="autistic">Autistic Spectrum/Aspergers</label>
+  </div>
+  <div class="multiple-choice">
+    <input id="dyslexia" name="Dyslexia" type="checkbox" value="Yes">
+    <label for="dyslexia">Dyslexia</label>
+  </div>
+  <div class="multiple-choice">
+    <input id="learning-difficulties" name="Learning-difficulties" type="checkbox" value="Yes">
+    <label for="learning-difficulties">Learning difficulties</label>
+  </div>
+  <div class="multiple-choice">
+    <input id="mental-health" name="Mental-health-conditions" type="checkbox" value="Yes">
+    <label for="mental-health">Mental Health condition</label>
+  </div>
+  <div class="multiple-choice" data-target="thinking-other">
+    <input id="nationalities-other" type="checkbox" aria-controls="thinking-other" aria-expanded="false">
+    <label for="nationalities-other">Other (please specify)</label>
+  </div>
+<div class="panel panel-border-narrow js-hidden" id="thinking-other" aria-hidden="true">
+  <label class="form-label" for="thinking-other">Thinking needs</label>
+  <input class="form-control" type="text" id="thinking-other" name="Other-thinking">
+</div>
+
+</fieldset>
+</div>
+</div>
+
+<!-- Vision-->
+
+<div class="multiple-choice" data-target="vision-options">
+  <input id="Vision" type="checkbox" value="No" aria-controls="vision-options" aria-expanded="false">
+  <label for="Vision">Vision</label>
+</div>
+
+<div class="panel panel-border-narrow js-hidden" id="vision-options" aria-hidden="true">
+<p>
+  Select all options that are relevant to you.
+</p>
+
+<div class="form-group">
+<fieldset>
+
+  <legend class="visually-hidden">Vision options</legend>
+
+  <div class="multiple-choice">
+    <input id="blind" name="Blind" type="checkbox" value="Yes">
+    <label for="blind">Blind</label>
+  </div>
+  <div class="multiple-choice">
+    <input id="partially-sighted" name="Partially-sighted" type="checkbox" value="Yes">
+    <label for="partially-sighted">Partially sighted (vision impairment not corrected by glasses)</label>
+  </div>
+</fieldset>
+</div>
+</div>
+
+<!-- Other-->
+
+<div class="multiple-choice" data-target="other-options">
+  <input id="other-needs" type="checkbox" value="Yes" aria-controls="other-options" aria-expanded="false">
+  <label for="other-needs">Other</label>
+</div>
+
+<div class="panel panel-border-narrow js-hidden" id="other-options" aria-hidden="true">
+<p>
+  Select all options that are relevant to you.
+</p>
+<div class="form-group">
+<fieldset>
+
+<legend class="visually-hidden">Other access need</legend>
+
+
+<div class="multiple-choice" data-target="hidden-details">
+  <input id="nationalities-other" type="checkbox" aria-controls="hidden-details" aria-expanded="true">
+  <label for="nationalities-other">Hidden disability such as epilepsy or diabetes</label>
+</div>
+<div class="panel panel-border-narrow" id="hidden-details" aria-hidden="false">
+  <label class="form-label" for="hidden">please specify</label>
+  <input class="form-control" type="text" id="hidden" name="Hidden-disability">
+</div>
+
+<div class="multiple-choice" data-target="not-specified">
+  <input id="nationalities-other" type="checkbox" aria-controls="not-specified" aria-expanded="false">
+  <label for="nationalities-other">Disability or condition not listed above</label>
+</div>
+<div class="panel panel-border-narrow js-hidden" id="not-specified" aria-hidden="true">
+  <label class="form-label" for="not-specified">please specify</label>
+  <input class="form-control" type="text" id="not-specified" name="Unlisted">
+</div>
+
+</fieldset>
+</div>
+</div>
+</fieldset><br>
+
+{{#input-submit}}submit updateContinue{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

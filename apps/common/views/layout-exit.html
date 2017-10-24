@@ -1,0 +1,31 @@
+{{< govuk-template}}
+
+{{$head}}
+{{> partials-head}}
+{{/head}}
+
+{{$pageTitle}}
+{{$title}}{{/title}}
+{{/pageTitle}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+{{$insideHeader}}{{/insideHeader}}
+
+{{$main}}
+<main id="content" class="main" role="main">
+  <div class="grid-row">
+    {{> partials-maincontent-left}}
+  </div>
+</main>
+{{/main}}
+
+{{$footerSupportLinks}}
+{{> partials-footer-support-links}}
+{{/footerSupportLinks}}
+
+{{$bodyEnd}}
+{{> partials-gatag}}
+<div class="version">{{versionNumber}}</div>
+{{/bodyEnd}}
+
+{{/ govuk-template}}

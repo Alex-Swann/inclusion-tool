@@ -1,0 +1,137 @@
+.error-heading {
+  margin: .5em 0 1em 0;
+}
+
+.process-heading {
+  font-weight: 700;
+}
+
+.info-page-heading {
+  margin-top: 0em;
+}
+
+.tc-bullet-heading {
+  font-weight: 700;
+  margin-left: -1.1em;
+  margin-top: 1em;
+}
+.process-number {
+  text-align: center;
+}
+.column-one-quarter {
+  float: left;
+  width: 25%;
+}
+.column-three-quarters {
+  float: right;
+  width: 75%;
+}
+.column-half {
+  width:50%;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+.complete-p {
+  padding-top: 1.4em;
+}
+
+.expanding-info-field {
+  margin-bottom: 1em;
+}
+
+[id$='-group'] {
+  legend {
+    span:first-child {
+      font-size: 1.25em;
+      font-weight: 700;
+    }
+    span:first-child[id$=-error] {
+      font-size: 19px;
+      line-height: 1.31579;
+      + span {
+        font-size: 1.25em;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+[data-alias-group] {
+  overflow: hidden;
+}
+
+#confirm {
+  margin-bottom: 30px;
+  .summary-name {
+    color: $secondary-text-colour;
+    @include summary-table-cell-align;
+    min-width: 78px;
+    @include media(desktop) {
+      min-width: 165px;
+    }
+  }
+  .summary-value {
+    @include summary-table-cell-align;
+  }
+
+  td.summary-value {
+    font-weight: bold;
+  }
+
+  .summary-change {
+    padding-top: 6px;
+  }
+  .button {
+    -webkit-box-shadow: 0 2px 0 #919191;
+    -moz-box-shadow: 0 2px 0 #919191;
+    box-shadow: 0 2px 0 #919191;
+  }
+}
+
+.form-hint {
+  color: #000;
+}
+
+.hide-label {
+  @extend .visuallyhidden;
+}
+
+#passportNumber-group, #registeredTravellerNumber-group{
+  margin-top: 1em;
+  label {
+    @include header-style;
+    margin-bottom: inherit;
+  }
+  input, select {
+    &.invalid-input {
+      margin-top: 0;
+    }
+  }
+}
+
+#refusedEntry-group {
+  margin-top: 1em;
+}
+
+select {
+  -webkit-appearance: menulist !important;
+  -moz-appearance: menulist !important;
+  appearance: menulist !important;
+}
+
+.thick-left-border {
+  border-left-width: 10px;
+}
+
+hr.keyline {
+  margin: 0;
+  border: 1px solid $grey-3;
+  border-width: 0 0 1px;
+  margin: 2em 0;
+}
+

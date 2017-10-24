@@ -1,0 +1,17 @@
+{
+  "startChoice": {
+    "required": "Select an option"
+  },
+  "dateOfSession": {
+    "before": "Your session date is in the future"
+  },
+  "participantID": {
+    "required": "Enter a participant identifier"
+  },
+  "rating": {
+    "required": "Select a rating"
+  },
+  "accessNeeds": {
+    "required": "Select an option"
+  }
+}

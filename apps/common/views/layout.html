@@ -1,0 +1,47 @@
+{{< govuk-template}}
+
+{{$cookieMessage}}GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a>{{/cookieMessage}}
+
+{{$head}}
+{{> partials-head}}
+{{/head}}
+
+{{$pageTitle}}
+{{$title}}{{/title}}
+{{/pageTitle}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+{{$insideHeader}}{{/insideHeader}}
+
+{{$main}}
+<main id="content" class="main" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+    <span id="step">
+      {{> partials-back}} <span>{{$step}}{{/step}}</span>
+    </span>
+    <span id="sign-out">
+      {{> partials-sign-out}}
+    </span>
+  <div class="grid-row">
+    {{> partials-maincontent-left}}
+  </div>
+
+  <script type="text/javascript" src="/public/js/bundle.js"></script>
+</main>
+{{/main}}
+
+{{$footerSupportLinks}}
+{{> partials-footer-support-links}}
+{{/footerSupportLinks}}
+
+{{$bodyEnd}}
+{{> partials-gatag}}
+<div class="version visuallyhidden">{{versionNumber}}</div>
+{{/bodyEnd}}
+
+{{/ govuk-template}}

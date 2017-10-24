@@ -1,0 +1,32 @@
+{{<layout-exit}}
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+<h1 class="heading-medium">{{#t}}exit-pages.title{{/t}}</h1>
+<p>{{#t}}exit-pages.restrictions.text{{/t}}</p>
+<ul class="list-bullet">
+  <li>{{#t}}exit-pages.restrictions.categories-list.refusedEntry{{/t}}</li>
+  <li>{{#t}}exit-pages.restrictions.categories-list.conditionalEntry{{/t}}</li>
+  <li>{{#t}}exit-pages.restrictions.categories-list.customPenalty{{/t}}</li>
+  <li>{{#t}}exit-pages.restrictions.categories-list.convictions{{/t}}</li>
+</ul>
+
+
+<p>{{#t}}exit-pages.closing-text{{/t}}</p>
+
+<a href="/backToGovUk" class="button" role="button">Exit to GOV.UK </a>
+{{#showStack}}
+<pre>
+  {{error.stack}}
+</pre>
+{{/showStack}}
+
+{{/content}}
+
+{{/layout-exit}}

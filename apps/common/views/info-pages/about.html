@@ -1,0 +1,150 @@
+{{<layout}}
+{{$title}}Registered Traveller - About{{/title}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-info-proposition}}
+{{/propositionHeader}}
+
+{{$content}}
+
+<section id="content" name="content">
+
+  <h1 class="bold-xlarge info-page-heading">About</h1>
+
+  <section id="about">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+    <h2>Offering faster entry to the UK</h2>
+    <h3 class="heading-small">Available to passport holders of Argentina, Australia, Belize, Brazil, Brunei Darussalam, Canada, Chile, Costa Rica, El Salvador, Guatemala, Honduras, Hong Kong Special Administrative Region, Israel, Japan, Malaysia, Mexico, New Zealand, Nicaragua, Panama, Paraguay, Singapore, South Korea, Taiwan, United States and Uruguay</h3>
+
+    <dl>
+      <dt class="block-label"><a href="#about">What is the Registered Traveller Service?</a></dt>
+      <dd data-section-name="about" class="form-block">
+        <p>Registered Traveller is a membership service which offers faster and more convenient entry at passport control for frequent travellers.</p>
+      </dd>
+
+      <dt class="block-label"><a href="#benefits">What are the benefits of becoming a Registered Traveller?</a></dt>
+      <dd data-section-name="benefits" class="form-block">
+        <p>Members enjoy faster entry at passport control and the choice of using the:
+        <ul class="list-bullet">
+          <li><a href="/eGateGuidance" target="_blank" rel="external">ePassport gates</a> (if they have a biometric/chipped passport)</li>
+          <img class="small-image" src="/public/images/passport.png">
+          <li>UK/EU lanes</li>
+        </ul>
+        </p>
+        <p>Members will no longer need to:
+        <ul class="list-bullet">
+          <li>Fill in a landing card</li>
+          <li>Undergo an interview</li>
+          <li>Have fingerprints taken as a visa holder</li>
+        </ul>
+        </p>
+      </dd>
+
+      <dt class="block-label"><a href="#eligibility">Who is eligible to become a Registered Traveller?</a></dt>
+      <dd data-section-name="eligibility" class="form-block">
+        <p>You can apply to become a member of Registered Traveller if you are: </p>
+
+        <ul class="list-bullet">
+          <li>A passport holder of  Argentina, Australia, Belize, Brazil, Brunei Darussalam, Canada, Chile, Costa Rica, El Salvador, Guatemala, Honduras, Hong Kong Special Administrative Region, Israel, Japan, Malaysia, Mexico, New Zealand, Nicaragua, Panama, Paraguay, Singapore, South Korea, Taiwan (passport must have a Personal Identification Number), United States and Uruguay.
+          </li>
+          <li>18 years of age or over</li>
+          <li>Hold a valid visa (exclusions are Tier 5 Sporting & Creative Concessions, EEA family permits, discretionary leave and leave outside the rules)</li>
+          <li>'A visitor' (and have visited 4 times in the previous 24 months) in one of the following categories:</li>
+
+          <ul class="list-bullet">
+            <li>Business</li>
+            <li>General</li>
+            <li>Academic</li>
+            <li>In Transit</li>
+            <li>Entertainment or Sports</li>
+            <li>Parents with a child in a UK school</li>
+            <li>A member of a diplomatic mission</li>
+            <li>A medical visitor</li>
+          </ul>
+
+        </ul>
+      </dd>
+
+      <dt class="block-label"><a name="where" href="#where">Where is the Registered Traveller Service available?</a></dt>
+      <dd data-section-name="where" class="form-block">
+        <p>You can use Registered Traveller at:</p>
+        <ul class="list-bullet">
+          <li>Gatwick</li>
+          <li>Heathrow</li>
+          <li>Birmingham</li>
+          <li>Manchester</li>
+          {{#portsForList}}
+          <li>{{.}}</li>
+          {{/portsForList}}
+          <li>Paris, Brussels and Lille (Rail Terminals)</li>
+        </ul>
+      </dd>
+
+      <dt class="block-label"><a href="#howMuch">How much does it cost to join the Registered Traveller Service?</a></dt>
+      <dd data-section-name="howMuch" class="form-block">
+        <p>It costs £70 to apply for the first 12 months membership.</p>
+        <p>This includes a non-refundable £20 administration fee.  Unsuccessful applicants will receive a £50 refund.</p>
+        <p>The renewal fee for a subsequent year is currently £50.</p>
+      </dd>
+
+
+      <dt class="block-label"><a href="#how">How do I apply to become a Registered Traveller?</a></dt>
+      <dd data-section-name="how" class="form-block">
+        <p><a href="/initialapplication/details" target="_blank" rel="external">Apply using our online application form<span class="visuallyhidden">Opens in new window</span></a>
+        </p>
+        <p>It takes 5-10 minutes and you just need your passport details and a credit or debit card to pay.</p>
+        <p>We will make background checks and contact you within 5 to 10 working days to advise you whether you have been successful and what you need to do next.</p>
+      </dd>
+
+      <dt class="block-label"><a href="#complete">I’m a provisional member of  Registered Traveller. How do I complete my membership?</a></dt>
+      <dd data-section-name="complete" class="form-block">
+        <p>Show your passport and evidence of leave to the Border Force officer at the airport (or Paris, Brussels or Lille international rail terminals if you're a visitor or diplomat).</p>
+        <p>When you arrive at:</p>
+        <ul class="list-bullet">
+          <li>Heathrow join the 'Other passports' lane (or 'Fast Track' if you have a 'Fast Track' ticket)</li>
+          <li>Birmingham, Manchester, Gatwick{{#portsForString}}, {{.}}{{/portsForString}} join the 'Other passports' lane  </li>
+        </ul>
+        <p>The officer will process your arrival and complete your Registered Traveller membership.</p>
+      </dd>
+
+
+      <dt class="block-label"><a href="#evidence">I’m a full member of Registered Traveller. Do I still need to carry my evidence of leave or Biometric Residence Permit (BRP) when I use Registered Traveller?</a></dt>
+      <dd data-section-name="evidence" class="form-block">
+        <p>Yes, you’ll still need your evidence of leave or BRP as well as your passport.</p>
+      </dd>
+
+      <dt class="block-label"><a href="#expiring">My Registered Traveller membership is expiring soon. How do I renew my membership?</a></dt>
+      <dd data-section-name="expiring" class="form-block">
+        <p>We will email you details on how to renew your membership 28 days before your membership expires.</p>
+        <p>Before you renew your membership, you’ll need to <a href="/update-passport/credentials#start" target="_blank" rel="external">update your passport<span class="visuallyhidden">Opens in new window</span></a> if any of your details have changed since you last used the service. It costs £20 to update your passport.</p>
+      </dd>
+
+
+      <dt class="block-label"><a href="#contact">How can I contact someone about registered traveller?</a></dt>
+      <dd data-section-name="contact" class="form-block">
+        <p>Email us at <a href="mailto:rtinbox@homeoffice.gsi.gov.uk" rel="external">rtinbox@homeoffice.gsi.gov.uk</a>
+      </dd>
+
+    </dl>
+
+    <form name="initial" method="get" action="/initial">
+      <button type="submit" class="button" name="applyNow">Apply now</button>
+    </form>
+  </section>
+
+  <p><a href="#global-header">Back to top</a>
+  <p>
+    <button onclick="window.close();" class="button" role="button" id="closeButton">Close <span
+      class="visuallyhidden">button closes current window</span></button>
+  </p>
+
+</section>
+
+{{/content}}
+
+{{/layout}}

@@ -1,0 +1,25 @@
+{{<layout-exit}}
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+<h1 class="heading-medium">{{#t}}exit-pages.title{{/t}}</h1>
+
+<p>{{#t}}exit-pages.age.text{{/t}}</p>
+<p>{{#t}}exit-pages.age.p1{{/t}}</p>
+
+<a href="/backToGovUk" class="button" role="button">Exit to GOV.UK </a>
+{{#showStack}}
+<pre>
+  {{error.stack}}
+</pre>
+{{/showStack}}
+
+{{/content}}
+
+{{/layout-exit}}

@@ -1,0 +1,9 @@
+@mixin header-style {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+@mixin summary-table-cell-align {
+  vertical-align: top;
+  padding-top: 15px;
+}

@@ -1,0 +1,42 @@
+{
+  "startChoice": {
+    "title1": "Digital inclusion data for",
+    "title2": "Right to work",
+    "legend": "What would you like to do?",
+    "info1": "This is a support tool for researchers to understand and log the digital inclusion categories of your research participants."
+  },
+  "participant": {
+    "title1": "Add a research participant for",
+    "title2": "Right to work"
+  },
+  "dateOfSession": {
+    "legend": "Date of research session",
+    "hint": "This is not a required field and can be a partial or full date."
+  },
+  "participantID": {
+    "legend": "Participant ID",
+    "hint": "Any identifier that is useful to you. Only people with permission to view this project will see this."
+  },
+  "accessNeedType": {
+    "title": "Add your participant's access needs?"
+  },
+  "default-title": "Mapping Participants - ",
+  "landing-page-title": "GOV.UK",
+  "termsAndConditions": {
+    "header": "Terms and conditions"
+  },
+  "privacyPolicy": {
+    "header": "Privacy policy"
+  },
+  "cookies": {
+    "header": "Cookies"
+  },
+  "about": {
+    "header": "About"
+  },
+  "graphPage": {
+    "title1": "Digital inclusion data for",
+    "title2": "Right to work",
+    "info1": "Below are the research participants' categories that have been entered to date:"
+  }
+}
